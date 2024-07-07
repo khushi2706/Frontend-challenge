@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product modal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .left-side {
+        padding: 0;
+      }
+      .card {
+        background: #d8d8d8be;
+        display: flex;
+        width: 65%;
+        box-shadow: 0px 0px 3px 3px #f3f3f3;
+      }
+      .card-col {
+        /* width: 50%; */
+      }
+      .card-col:first-child {
+        animation: fall 1s;
+      }
+
+      .card-col:nth-child(2) {
+        background: #d8d8d8be;
+        animation: fall2 1s;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(-100vh);
+        }
+        100% {
+          transform: translateY(0vh);
+        }
+      }
+
+      @keyframes fall2 {
+        0% {
+          transform: translateY(100vh);
+        }
+        100% {
+          transform: translateY(0vh);
+        }
+      }
+
+      .right-side {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+      }
+      button {
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        padding: 0.75em;
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-col">
+          <img src="../Asserts/Headphone.jpg" height="300" alt="" />
+        </div>
+        <div class="card-col right-side">
+          <h3>HEADPHONE</h3>
+          <h4>Boat Headphones Buds Z-200</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            laudantium incidunt facilis ratione voluptatibus natus voluptas.
+            Illum, vitae quasi veritatis nostrum minus dolore, necessitatibus ex
+            quos non ea iste sapiente.
+          </p>
+
+          <div class="price">
+            <b>$1000</b>
+            <del>$3000</del>
+          </div>
+          <button>Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

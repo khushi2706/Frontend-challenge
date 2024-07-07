@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comming soon</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+      }
+      .col {
+        width: 50%;
+        height: 100%;
+      }
+      .info {
+        padding: 100px;
+      }
+      .col:nth-child(2) {
+        background-image: url("../Asserts/products.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .header {
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+      h1:first-child {
+        color: palevioletred;
+        font-weight: 300;
+      }
+      p {
+        margin: 1rem 0;
+        color: rgb(238 117 157);
+        line-height: 1.75rem;
+      }
+      .email {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .email input {
+        width: 100%;
+        min-width: 200px;
+        border-radius: 10px;
+        padding: 0.5em;
+      }
+      .email button {
+        transform: translateX(-1.5rem);
+        background-color: palevioletred;
+        padding: 4px;
+        width: 3rem;
+        font-size: 1.5rem;
+        border: 1px transparent;
+        border-radius: 10px;
+        color: white;
+      }
+      .mt-30 {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col info">
+        <img src="../Asserts/logo.svg" alt="" />
+        <div class="header mt-30">
+          <h1>We're</h1>
+          <h1>Coming</h1>
+          <h1>Soon</h1>
+        </div>
+        <p class="mt-30">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere atque
+          itaque aperiam debitis assumenda tempore. Aspernatur qui, dolores
+          cumque repudiandae perferendis deserunt pariatur saepe adipisci
+          tempore laboriosam deleniti, expedita quidem.
+        </p>
+        <div class="email mt-30">
+          <input type="text" />
+          <button>></button>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </body>
+</html>
